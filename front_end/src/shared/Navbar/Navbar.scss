@@ -1,0 +1,10 @@
+.Navbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: $height-navbar;
+  background-color: red;
+  ul {
+    display: inline-flex;
+  }
+}

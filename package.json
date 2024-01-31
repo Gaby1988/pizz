@@ -1,0 +1,22 @@
+{
+  "name": "template-fullstack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "setup": "npm i && husky install && npm --prefix ./front_end i && npm --prefix ./back_end i",
+    "migrate": "cd back_end/ && node migrate.js && cd ..",
+    "dev": "concurrently -n front,back -c green,yellow -t \"HH:mm:ss\" -p \"{name} {time}\" \"npm --prefix ./front_end run dev\" \"npm --prefix ./back_end run dev\"",
+    "dev-front": "npm --prefix ./front_end run dev",
+    "dev-back": "npm --prefix ./back_end run dev",
+    "lint": "npm --prefix ./front_end run lint && npm --prefix ./back_end run lint",
+    "fix": "npm --prefix ./front_end run fix && npm --prefix ./back_end run fix"
+  },
+  "keywords": [],
+  "author": "Wild Code School",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0",
+    "husky": "^7.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+@import "./sass/utils/variables.scss";
+@import "./components/CardsPizza/CardsPizza.scss";
+@import "./pages/Home/Home.scss";
+@import "./pages/SignUp/SignUp.scss";
+@import "./shared/Navbar/Navbar.scss";
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+
+}
+// A supprimer à la fin 
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: #ed9b0721;
+  margin: 0;
+  width: 100vw;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
